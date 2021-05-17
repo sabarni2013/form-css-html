@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel ="stylesheet" >
+        <script src="file.js"></script>
+    </head>
+    <body>
+        <form class= "form" action="table.html" method="post" id="submitForm" onsubmit="submitForm()">
+            <div class="form-input">
+                <span class="inputColumn">First name</span><input type="text" name="firstName" class="valueColumn" value="">
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">Last name</span>
+                <input type="text" class="valueColumn" name="secondName"> 
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">Address</span>
+                <textarea class="valueColumn" name="address"></textarea>
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">Pincode</span>
+            <input type="text" class="valueColumn" name="pincode">
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">Gender</span>
+                <div class="valueColumn">
+                    <input type="radio" class="inputRadioColumn" name="radioV" value="male">male
+                    <input type="radio" class="inputRadioColumn" name="radioV" value="female">female
+                </div>
+                
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">choice of food</span>
+                <div class="valueColumn">
+                    <input type="checkbox" class="inputCheckBoxColumn"  name="choiceOffood[]" onchange="choiceOffoodSelect(this.value, checkVal=>{checkVal.checked})" value="indian">indian
+                    <input type="checkbox" class="inputCheckBoxColumn" name="choiceOffood[]" onchange="choiceOffoodSelect(this.value, checkVal=>{checkVal.checked})" value="chinese">chinese
+                    <input type="checkbox" class="inputCheckBoxColumn" name="choiceOffood[]" onchange="choiceOffoodSelect(this.value, checkVal=>{checkVal.checked})"  value="british">british
+                    <input type="checkbox" class="inputCheckBoxColumn" name="choiceOffood[]" onchange="choiceOffoodSelect(this.value, checkVal=>{checkVal.checked})"  value="thai">thai
+                    <input type="checkbox" class="inputCheckBoxColumn" name="choiceOffood[]" onchange="choiceOffoodSelect(this.value, checkVal=>{checkVal.checked}   )"  value="continental">continental
+    
+                </div>
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">State</span>
+                  <input type="text" class="valueColumn" name="state">
+            </div>
+            <div class="form-input">
+                <span class="inputColumn">Country</span>
+                <input type="text" class="valueColumn" name="country">
+            </div>
+            <div class="form-input">
+                <input type="submit" class="valueButtonColumn" value="submit">
+            </div>
+        </form>
+    
+    </body>
+    
+</html>
