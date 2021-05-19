@@ -1,11 +1,9 @@
 var checkSelect = {};
 let forDataValue;
 function submitForm() {
-    window.alert('enter');
   
     var formEl = document.forms.submitForm;
     var formData = new FormData(formEl);
-    console.log('formData..', formData);
    
     localStorage.setItem("firstName", formData.get('firstName'));
     localStorage.setItem("secondName", formData.get('secondName'));
@@ -33,7 +31,7 @@ function submitForm() {
     
 }
 window.onload = function(){
-    console.log('forDataValue...', localStorage.getItem('firstName'));
+    
 document.getElementById('fname').innerText = localStorage.getItem('firstName');
 document.getElementById('lname').innerText = localStorage.getItem('secondName');
 document.getElementById('address').innerText = localStorage.getItem('address');
