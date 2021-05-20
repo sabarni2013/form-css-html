@@ -24,11 +24,6 @@ function submitForm() {
 
     var str = aIds.join(', ');
     localStorage.setItem("choiceOffood", str);
-    console.log(str);
-   
-    
-    
-    
 }
 window.onload = function(){
     
